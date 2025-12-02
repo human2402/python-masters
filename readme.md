@@ -15,6 +15,7 @@ Telegram: @human2402
 ---
 
 ## Папки
+
 - lists - Массивы list и numpy array
 
 - venv-project - Виртуальное окружение (venv)
