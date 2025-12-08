@@ -7,7 +7,7 @@
 
 import numpy as np
 import timeit
-from utils import generate_list, generate_set, generate_numpy, standardize_and_sum
+from utils import generate_list, generate_set, generate_numpy, standardize_and_sum_debug
 from tests import test_standardize_small, test_standardize_with_zero, test_large_array
 
 
@@ -25,7 +25,7 @@ def calculate():
     new_numpy = generate_numpy(n, a, b)
     print ("Массив -", new_numpy)
     print ("Сумма элементов стандартизированного массива -",
-           standardize_and_sum(new_numpy))
+           standardize_and_sum_debug(new_numpy))
     
 def test():
     test_standardize_small()
@@ -35,4 +35,4 @@ def test():
 if __name__ == "__main__":
     # benchmark()
     calculate()
-    test()
+    # test()
