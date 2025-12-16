@@ -23,3 +23,4 @@ def test_predict_known_value():
     pred = predict_value(model, TEST_INPUT)
     # Используем округление, чтобы избежать мелких погрешностей
     assert round(pred, 2) == round(EXPECTED_OUTPUT, 2)
+
