@@ -40,7 +40,7 @@ def predict(
     }])
 
     proba = pipe.predict_proba(data)[0][1]
-    return f"Probability of heart disease: {proba:.2f}"
+    return f"Pediction:{("Not sick" if proba<= 0.5 else "Sick")}. Probability of heart disease: {proba:.2f} "
 
 
 
